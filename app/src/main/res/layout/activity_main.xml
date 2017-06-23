@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shap_button_height"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_64"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/margin_64">
+            <Button
+                android:id="@+id/main_task"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size"
+                android:text="@string/main_task"
+                android:gravity="center"
+                android:background="@drawable/blue_button"/>
+            <Button
+                android:id="@+id/main_complete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size"
+                android:text="@string/main_complete"
+                android:gravity="center"
+                android:background="@drawable/white_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.saic.visit.widget.MongoPullToRefreshOrLoadMoreListView
+        android:id="@+id/list_task"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

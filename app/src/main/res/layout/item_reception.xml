@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gray_circle" />
+
+        <TextView
+            android:id="@+id/reception_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:text="@string/app_name"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_huge" />
+        <TextView
+            android:id="@+id/reception_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/shap_button_height"
+            android:layout_gravity="center_vertical"
+            android:text="小螃蟹"
+            android:minWidth="80dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:paddingLeft="@dimen/padding_16"
+            android:paddingRight="@dimen/padding_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:textSize="@dimen/font_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/blue_button" />
+    </LinearLayout>

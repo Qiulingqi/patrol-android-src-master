@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">ATS店访</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">更新于&#160;&#058;&#160;</string>
+    <drawable name="gray">#b6b6b6</drawable>
+
+    <string name="login_username">登录名</string>
+    <string name="login_password">密码</string>
+    <string name="login">登&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="login_forget_password">忘记密码?</string>
+
+    <string name="main">首页</string>
+    <string name="main_task">任务清单</string>
+    <string name="main_complete">已完成</string>
+
+    <string name="detail_reception">流程演练人员信息</string>
+    <string name="detail_visit">现场记录</string>
+    <string name="detail_report">评分表</string>
+    <string name="detail_score">评分标准</string>
+
+    <string name="confirm_mobile">接收动态口令的手机</string>
+    <string name="confirm_send">发送</string>
+    <string name="confirm_password">动态口令</string>
+    <string name="confirm_save">保&#160;&#160;&#160;&#160;存</string>
+    <string name="confirm_other"><u>其他方式确认</u></string>
+    <string name="confirm_shop_title">店总确认</string>
+
+    <string name="visit_title">现场记录</string>
+    <string name="visit_notice_tip">暂无注意事项</string>
+    <string name="visit_confirm">店总确认</string>
+    <string name="visit_report">上传数据</string>
+    <string name="one_output">一键导出</string>
+
+    <string name="reception_title">安徽恒星</string>
+    <string name="reception_no_record">未录入</string>
+
+    <string name="userinfo_hint1">请输入姓名</string>
+    <string name="userinfo_hint2">请输入职位</string>
+    <string name="userinfo_hint3">请输入联系方式</string>
+    <string name="userinfo_name">姓名：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="userinfo_sex">性别：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="userinfo_position">职位：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="userinfo_link">联系方式：</string>
+
+    <string name="score_title">评分标准</string>
+    <string name="other_title">其它方式确认</string>
+    <string name="other_reason">其它方式确认原因：</string>
+    <string name="other_confirm">确&#160;&#160;&#160;&#160;认</string>
+
+    <string name="add_visit_title">添加/修改记录</string>
+    <string name="add_visit_model">选择模块</string>
+    <string name="add_visit_check_link_one">选择一级目录</string>
+    <string name="add_visit_check_link_two">选择二级目录</string>
+    <string name="add_visit_check_item">选择评分标准</string>
+    <string name="add_visit_check_point">选择检查点</string>
+    <string name="add_visit_reason">现场记录：</string>
+    <string name="add_visit_description">说明</string>
+
+    <string name="task_upload_title">任务上传完成</string>
+    <string name="task_title">任务完成</string>
+    <string name="task_success">返回任务列表</string>
+    <string name="task_confirm">&#160;&#160;&#160;&#160;店总确认&#160;&#160;&#160;&#160;</string>
+    <string name="upfile_servicer">上传文件到服务器</string>
+
+    <string name="llloginsdk_neterror">网络连接错误</string>
+    <string name="llloginsdk_tip">温馨提示</string>
+    <string name="line">&#160;&#160;--&#160;&#160;</string>
+    <string name="tran">&#160;&#160;&#160;&#160;</string>
+    <string name="point">&#160;&#160;>&#160;&#160;</string>
+    <string name="remark">请输入备注</string>
+    <string name="add">添加</string>
+    <string name="save">保存</string>
+    <string name="confirm_des">评分表已经发送到店总的邮箱\n任务完成后店访报告将不能在App上进行修改\n任务归档到已完成任务Tab中</string>
+    <string name="confirm_success">店总确认成功！</string>
+    <string name="upload_success">数据导出成功！</string>
+</resources>

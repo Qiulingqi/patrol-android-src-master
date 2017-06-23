@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_other">
+
+    <include layout="@layout/top"
+        android:id="@+id/top"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_add"
+        android:layout_below="@+id/top"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@color/bg_gray" />
+
+            <TextView
+                android:id="@+id/txt_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/check_gray"
+                android:drawablePadding="@dimen/padding_16"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_16"
+                android:text="@string/add_visit_model"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_huge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <TextView
+                android:id="@+id/txt_check_link_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/check_gray"
+                android:drawablePadding="@dimen/padding_16"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_16"
+                android:text="@string/add_visit_check_link_one"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_huge" />
+
+            <com.saic.visit.widget.RadioButtonAndEditTextView
+                android:id="@+id/radio_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <com.saic.visit.widget.RadioButtonAndEditTextView
+                android:id="@+id/radio_check_link_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <TextView
+                android:id="@+id/txt_check_link_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/check_gray"
+                android:drawablePadding="@dimen/padding_16"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_16"
+                android:text="@string/add_visit_check_link_two"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_huge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <com.saic.visit.widget.RadioButtonAndEditTextView
+                android:id="@+id/radio_check_link_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <TextView
+                android:id="@+id/txt_check_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/check_gray"
+                android:drawablePadding="@dimen/padding_16"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_16"
+                android:text="@string/add_visit_check_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_huge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height2"
+                android:background="@color/bg_gray" />
+
+            <FrameLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/list_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/layout_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/padding_12"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/padding_12"
+            android:background="@drawable/blue_button_bg_shape"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_super_huge" />
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

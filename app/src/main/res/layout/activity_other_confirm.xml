@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_save"
+        android:layout_below="@+id/include_top"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16"
+                    android:text="@string/other_reason" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height2"
+                    android:background="@color/bg_gray" />
+
+                <TextView
+                    android:id="@+id/txt_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/pull"
+                    android:padding="@dimen/padding_16"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    tools:text="demo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_huge" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height2"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:background="@color/bg_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height2"
+                    android:background="@color/bg_gray" />
+
+                <EditText
+                    android:id="@+id/edit_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="@dimen/padding_16"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:hint="原因详述"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_huge" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height2"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:background="@color/bg_gray" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_32"
+            android:background="@drawable/blue_button_bg_shape"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="@string/confirm_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size" />
+        >
+
+
+
+</RelativeLayout>

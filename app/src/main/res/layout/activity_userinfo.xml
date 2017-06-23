@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" android:id="@+id/top_layout" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_below="@id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/userinfo_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_save"
+        android:layout_below="@+id/top"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32">
+
+            <LinearLayout
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_name"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/padding_16"
+                    android:textSize="@dimen/font_size" />
+                <AutoCompleteTextView
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:completionThreshold="1"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:hint="@string/userinfo_hint1"
+                    android:layout_height="wrap_content">
+                    <requestFocus />
+                </AutoCompleteTextView>
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/one"
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_below="@id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_sex"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/padding_16"
+                    android:textSize="@dimen/font_size" />
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_24"
+                    android:layout_marginRight="@dimen/margin_24"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/man"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonStyles"
+                        android:textSize="@dimen/font_size"
+                        android:text="男"/>
+                    <RadioButton
+                        android:id="@+id/women"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonStyles"
+                        android:textSize="@dimen/font_size"
+                        android:text="女"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_below="@id/two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/three"
+                android:layout_below="@id/view_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_position"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/padding_16"
+                    android:textSize="@dimen/font_size" />
+
+                <com.saic.visit.widget.ClearEditText
+                    android:id="@+id/position"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/userinfo_hint2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_below="@id/three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/four"
+                android:layout_below="@id/view_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_link"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/padding_16"
+                    android:textSize="@dimen/font_size" />
+
+                <com.saic.visit.widget.ClearEditText
+                    android:id="@+id/mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/userinfo_hint3"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_marginRight="@dimen/margin_32"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:background="@drawable/blue_button_bg_shape"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/confirm_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size" />
+    >
+
+</RelativeLayout>

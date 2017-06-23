@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_other"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/visit_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/success"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:drawablePadding="@dimen/margin_8"
+            android:textSize="@dimen/font_size_huge"
+            android:textStyle="bold"
+            android:text="@string/confirm_success"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visit_no"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_huge"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/confirm_des"/>
+
+    </RelativeLayout>
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/task_success"
+            android:textSize="@dimen/font_size_huge"
+            android:layout_marginLeft="@dimen/button_height"
+            android:layout_marginRight="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_32"
+            android:background="@drawable/gray_white_button"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+</LinearLayout>

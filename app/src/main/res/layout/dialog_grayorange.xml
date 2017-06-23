@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/llloginsdk_corners_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_margin="10dp"
+            android:maxLines="5" />
+
+        <Button
+            android:id="@+id/okBtn"
+            style="@style/LLLoginSDK.LoginClickStyle"
+            android:layout_marginTop="30dp"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/llloginsdk_login_head" />
+
+</RelativeLayout>

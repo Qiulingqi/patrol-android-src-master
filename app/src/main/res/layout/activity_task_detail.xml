@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_other"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_reception"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24"
+                android:background="@drawable/gray_white_button"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/line_height2"
+                    android:background="@drawable/detail_1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_reception"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/padding_12"
+                        android:drawablePadding="@dimen/padding_12"
+                        android:drawableRight="@drawable/go_to"
+                        android:paddingRight="@dimen/padding_12"
+                        android:textSize="@dimen/font_size_huge" />
+                </LinearLayout>
+            <TextView
+                android:id="@+id/detail_reception"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:text="未完成录入"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_12"
+                android:textSize="@dimen/font_size_huge" />
+
+            <LinearLayout
+                android:id="@+id/layout_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="@drawable/gray_white_button"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/line_height2"
+                    android:background="@drawable/detail_2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_visit"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/padding_12"
+                    android:drawablePadding="@dimen/padding_12"
+                    android:drawableRight="@drawable/go_to"
+                    android:paddingRight="@dimen/padding_12"
+                    android:textSize="@dimen/font_size_huge" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detail_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:text="未记录扣分项"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_12"
+                android:textSize="@dimen/font_size_huge" />
+
+            <LinearLayout
+                android:id="@+id/layout_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="@drawable/gray_white_button"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/line_height2"
+                    android:background="@drawable/detail_3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_report"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/padding_12"
+                    android:drawablePadding="@dimen/padding_12"
+                    android:drawableRight="@drawable/go_to"
+                    android:paddingRight="@dimen/padding_12"
+                    android:textSize="@dimen/font_size_huge" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detail_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:text="尚未生成评分表"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_12"
+                android:visibility="gone"
+                android:textSize="@dimen/font_size_huge" />
+
+            <LinearLayout
+                android:id="@+id/layout_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="@drawable/gray_white_button"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/line_height2"
+                    android:background="@drawable/detail_4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_score"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/padding_12"
+                    android:drawablePadding="@dimen/padding_12"
+                    android:drawableRight="@drawable/go_to"
+                    android:paddingRight="@dimen/padding_12"
+                    android:textSize="@dimen/font_size_huge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/file_Upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="#eee"
+                    android:text="历史文件未上传完毕，请点击续传"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_save"
+        android:layout_below="@+id/include_top"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_mobile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:background="@drawable/edittext_shape">
+
+                    <EditText
+                        android:id="@+id/input_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/margin_4"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:id="@+id/button_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/send_msg_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_24"
+                        android:paddingRight="@dimen/padding_24"
+                        android:text="@string/confirm_send"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/margin_2"
+                android:layout_marginLeft="@dimen/margin_32"
+                android:background="@color/main_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_password" />
+
+                <com.saic.visit.widget.gridpasswordview.GridPasswordView
+                    android:id="@+id/comfirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginBottom="@dimen/margin_32"
+                    android:layout_marginTop="@dimen/margin_8" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:background="@drawable/blue_button_bg_shape"
+            android:gravity="center"
+            android:text="@string/confirm_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size" />
+        >
+
+        <TextView
+            android:id="@+id/confirm_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="right"
+            android:text="@string/confirm_other"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/font_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

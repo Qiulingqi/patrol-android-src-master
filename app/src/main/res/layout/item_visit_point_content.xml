@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash_line_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/xiangji"/>
+
+        <TextView
+            android:id="@+id/cb_item"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#999"
+            android:text="添加照片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.saic.visit.widget.MyGridView
+            android:id="@+id/firstView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            >
+        </com.saic.visit.widget.MyGridView>
+    </LinearLayout>
+
+    <!-- <CheckBox
+         android:id="@+id/cb_item"
+         style="@style/checkbox_theme"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/margin_24" />
+
+     <com.saic.visit.widget.MTextView
+         android:id="@+id/tv_item"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+         android:paddingBottom="@dimen/padding_12"
+         android:paddingLeft="12dp"
+         android:paddingRight="@dimen/margin_24"
+         android:paddingTop="@dimen/padding_12"
+         android:textColor="@color/black"
+         android:textSize="@dimen/font_size_huge"
+         tools:text="三分鼎立；kkkkkkkkkk三分鼎立；kkkkkkkkkk三分鼎立；kkkkkkkkkk三分鼎立；kkkkkkkkkk三分鼎立；kkkkkkkkkk" />-->
+</LinearLayout>
+

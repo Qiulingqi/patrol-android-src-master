@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="other_confirm_style">
+        <item>无法接收到动态口令</item>
+        <item>店总对店访结果有异议</item>
+    </string-array>
+    <integer-array name="other_confirm_type">
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+</resources>

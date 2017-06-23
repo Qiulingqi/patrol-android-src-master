@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/dash_line"
+        android:drawableRight="@drawable/check_blue_small"
+        android:paddingBottom="@dimen/padding_16"
+        android:paddingLeft="64dp"
+        android:paddingRight="@dimen/padding_32"
+        android:paddingTop="@dimen/padding_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_huge" />
+
+    <LinearLayout
+        android:id="@+id/layout_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_12"
+        android:orientation="vertical">
+        <com.saic.visit.widget.CheckBoxAndEditTextView
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:flag="true"
+            app:orientation="vertical" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/bg_gray" />
+
+        <EditText
+            android:id="@+id/edit_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/remark"
+            android:minHeight="@dimen/button_height"
+            android:padding="@dimen/padding_5"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_weight="1"
+        android:background="@drawable/shop_visit_bg">
+
+        <ListView
+            android:id="@+id/list_visit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:layout_marginTop="5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/bg_gray_other"
+            android:dividerHeight="@dimen/line_height"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/visit_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/margin_8"
+            android:drawableTop="@drawable/shop_visit_no"
+            android:gravity="center_horizontal"
+            android:text="@string/visit_notice_tip"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_huge" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_visit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_normal"
+            android:gravity="center"
+            android:text="@string/one_output"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_huge" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_weight="1"
+            android:background="@drawable/blue_white_button"
+            android:gravity="center"
+            android:text="@string/visit_confirm"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/font_size_huge"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_other"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.saic.visit.widget.MTextViewOther
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/check_checkbox_selector"
+        android:textColor="@color/black"
+        android:drawablePadding="@dimen/padding_5"
+        android:background="@color/bg_gray_other"
+        android:paddingLeft="@dimen/margin_24"
+        android:paddingTop="@dimen/padding_8"
+        android:gravity="center_vertical"
+        tools:text="三分鼎立；kkkkkkkkkk"
+        android:textSize="@dimen/font_size"
+        />
+</LinearLayout>

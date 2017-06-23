@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dash_line_white"
+        android:paddingBottom="@dimen/padding_16"
+        android:paddingLeft="@dimen/padding_24"
+        android:paddingRight="@dimen/padding_32"
+        android:paddingTop="@dimen/padding_16"
+        android:text="@string/add_visit_reason"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_huge" />
+    <LinearLayout
+        android:id="@+id/ll_itemvos"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+    <com.saic.visit.widget.ClearWatcherEditText
+        android:layout_margin="10dp"
+        android:id="@+id/edit_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:background="@color/white"
+        android:hint="@string/remark"
+        android:paddingBottom="@dimen/padding_5"
+        android:paddingLeft="@dimen/padding_16"
+        android:paddingTop="@dimen/padding_5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size" />
+
+</LinearLayout>

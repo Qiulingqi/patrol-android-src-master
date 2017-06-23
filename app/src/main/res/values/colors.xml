@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_blue">#308df7</color>
+    <color name="tran_blue">#4FD2C2</color>
+    <color name="main_trans_blue">#cc308df7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="tran">#00000000</color>
+    <color name="gray">#b6b6b6</color>
+    <color name="color_gray_5">#666666</color>
+    <color name="color_gray_6">#a9a9a9</color>
+    <color name="color_gray_7">#999999</color>
+    <color name="color_gray_8">#c4c4c4</color>
+    <color name="color_gray_9">#e3e3e3</color>
+    <color name="color_gray_10">#a9a9a9</color>
+    <color name="color_gray_11">#eeeded</color>
+    <color name="orange">#FFAD18</color>
+    <color name="red">#F64A32</color>
+    <color name="bg_gray">#EEEEEE</color>
+    <color name="bg_gray_other">#F5F5F5</color>
+    <color name="trans_black">#4d000000</color>
+    <color name="btn_login_disable">#eeeeee</color>
+    <color name="main_item_name">#1d1d26</color>
+    <color name="main_item_time">#a8a8aa</color>
+    <color name="main_score_item">#8C8C8C</color>
+</resources>

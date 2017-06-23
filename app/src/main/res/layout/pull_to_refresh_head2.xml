@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_image_area"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_pointer"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/compass"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/head_arrowImageView"
+            android:layout_width="12.5dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/pointer" />
+
+        <ImageView
+            android:layout_width="12.5dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loading_progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@anim/progress_car"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" >
+    </ImageView>
+    
+    <!-- 进度条 -->
+
+    <LinearLayout
+        android:id="@+id/pull_linLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/head_tipsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p2refresh_release_refresh"
+            android:textColor="@color/color_gray_7"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/head_lastUpdatedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/p2refresh_refresh_lasttime"
+            android:textColor="@color/color_gray_5"
+            android:textSize="@dimen/font_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/color_gray_11"
+        android:visibility="gone" />
+
+</LinearLayout>
